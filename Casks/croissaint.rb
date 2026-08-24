@@ -1,5 +1,5 @@
 cask "croissaint" do
-  version "3.4.0"
+  version "3.4.1"
   sha256 "e7b497bec45e61f4535770d2fb3a8f1514a9af8527dac16e03adb598a3c3476b"
 
   url "https://github.com/chuahchengxi/croissant/releases/download/v#{version}/Croissaint-#{version}.dmg"
