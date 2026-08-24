@@ -12,5 +12,5 @@ cask "croissaint" do
     strategy :github_latest
   end
 
-  app "Croissant.app"
+  app "Croissaint.app"
 end
