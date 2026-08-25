@@ -1,6 +1,6 @@
 cask "croissaint" do
-  version "3.4.1"
-  sha256 "e7b497bec45e61f4535770d2fb3a8f1514a9af8527dac16e03adb598a3c3476b"
+  version "0.0.7"
+  sha256 "df94f0eec107a5f8380d0585a7172b15ed1feaeb1e97ed70d405c43908ba3922"
 
   url "https://github.com/chuahchengxi/croissant/releases/download/v#{version}/Croissaint-#{version}.dmg"
   name "Croissaint"
@@ -11,6 +11,8 @@ cask "croissaint" do
     url :homepage
     strategy :github_latest
   end
+
+  depends_on macos: :sonoma
 
   app "Croissaint.app"
 end
