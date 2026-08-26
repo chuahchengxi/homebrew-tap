@@ -1,6 +1,6 @@
 cask "croissaint" do
-  version "0.0.7"
-  sha256 "df94f0eec107a5f8380d0585a7172b15ed1feaeb1e97ed70d405c43908ba3922"
+  version "0.0.9"
+  sha256 "600845be5f8ee58b1fa90751c92ccc611db6a0969029f7e1104410ed90ac7a2f"
 
   url "https://github.com/chuahchengxi/croissant/releases/download/v#{version}/Croissaint-#{version}.dmg"
   name "Croissaint"
