@@ -15,4 +15,14 @@ cask "croissaint" do
   depends_on macos: :sonoma
 
   app "Croissaint.app"
+
+  # Releases are ad-hoc signed and Homebrew quarantines every download. Together
+  # those make macOS call the app damaged and offer only "Move to Trash" — and
+  # right-click Open, the usual escape hatch, was removed for ad-hoc code in
+  # macOS 15. Clearing the flag here is the difference between a working install
+  # and a user who assumes the download is corrupt. Delete once notarized.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Croissaint.app"]
+  end
 end
